@@ -14,6 +14,22 @@ public class MakePyramid {
 
         */
 
+        int numberOfRows = 6;
 
+        for(int i = 0; i <= numberOfRows; i++){
+
+            for(int j = numberOfRows - i; j > 0; j--) {
+                System.out.print(" ");
+            }
+
+            for (int j = 0; j < i; j++){
+               System.out.print("* ");
+            }
+
+            System.out.println();
         }
-  }
+    }
+}
+
+
+

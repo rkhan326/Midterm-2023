@@ -1,6 +1,6 @@
 package math.problems;
 
-public class FindMissingNumberMain {
+public class FindMissingNumber {
 
     public static void main(String[] args) {
         /*
@@ -9,7 +9,7 @@ public class FindMissingNumberMain {
          * Write java code to find the missing number from the array. Write static helper method to find it.
          */
 
-        int[] array = new int[]{10, 2, 1, 4, 5, 3, 7, 9, 6};
+        int[] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
         System.out.println(findMissingNumber(array));
 
     }

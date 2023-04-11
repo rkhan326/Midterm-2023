@@ -8,8 +8,42 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
+		int decrementBy = 0;
+		int count =1;
 
+		for(int i = 100; i>=0; i--) {
+			if (i == 100) {
+				System.out.print(i + ",");
 
+			} else if (count % 10 != 0) {
+				System.out.print(i + ",");
+				i = i - decrementBy;
+				count++;
+
+			} else {
+				decrementBy++;
+				if(i==0)
+					System.out.println(i);
+				else{
+
+				System.out.print(i + ",");
+				i = i - decrementBy;
+				count++;
+				}
+			}
+		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

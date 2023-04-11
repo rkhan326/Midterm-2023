@@ -22,6 +22,7 @@ public class Numbers {
 		int [] num = new int[1000000];
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+
 		//Selection Sort
 		Sort algo = new Sort();
 		algo.selectionSort(num);
@@ -29,9 +30,12 @@ public class Numbers {
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
         connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
         List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
-        printValue(numbers);
+
+		printValue(numbers);
+
 		int n = num.length;
 		randomize (num, n);
+
 		//Insertion Sort
 		algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;
@@ -39,6 +43,35 @@ public class Numbers {
 
 		//By following above, Continue for rest of the Sorting Algorithm....
 
+		//Bubble Sort
+		algo.bubbleSort(num);
+		long bubbleSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
+
+		//quick Sort
+		algo.quickSort(num);
+		long quickSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in quick Sort take: " + quickSortExecutionTime + " milli sec");
+
+		//bucket sort
+		algo.bucketSort(num);
+		long bucketSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in bucket Sort take: " + bucketSortExecutionTime + " milli sec");
+
+		//heap sort
+		algo.heapSort(num);
+		long heapSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in heap Sort take: " + heapSortExecutionTime + " milli sec");
+
+		//shell sort
+		algo.shellSort(num);
+		long shellSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in shell Sort take: " + shellSortExecutionTime + " milli sec");
+
+		//merge sort
+		algo.mergeSort(num);
+		long mergeSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in merge Sort take: " + mergeSortExecutionTime + " milli sec");
 
 
 
