@@ -15,7 +15,7 @@ public class ConnectToMongoDB {
 
     public static MongoDatabase mongoDatabase = null;
 
-    public MongoDatabase connectToMongoDB() {
+    public static MongoDatabase connectToMongoDB() {
         MongoClient mongoClient = new MongoClient("localhost" , 27017);
         mongoDatabase = mongoClient.getDatabase("students");
         System.out.println("Database Connected");
@@ -23,7 +23,7 @@ public class ConnectToMongoDB {
         return mongoDatabase;
     }
 
-    public String insertIntoToMongoDB(User user){
+    public static String insertIntoToMongoDB(User user){
         String profile = user.getStName();
         MongoDatabase mongoDatabase = connectToMongoDB();
         MongoCollection<Document> collection = mongoDatabase.getCollection("profile");
@@ -33,7 +33,7 @@ public class ConnectToMongoDB {
         return profile + " has been registered";
     }
 
-    public List<User> readUserProfileFromMongoDB(){
+    public static List<User> readUserProfileFromMongoDB(){
         List<User> list = new ArrayList<User>();
         User user = new User();
         MongoDatabase mongoDatabase = connectToMongoDB();
@@ -67,10 +67,10 @@ public class ConnectToMongoDB {
     }
 
     public static void main(String[] args){
-//        insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
-        //List<User> user = readUserProfileFromMongoDB();
-        //for(User person:user){
-            //System.out.println(person.getStName()+ " "+ person.getStID());
-        //}
+        insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
+        List<User> user = readUserProfileFromMongoDB();
+        for(User person:user){
+            System.out.println(person.getStName()+ " "+ person.getStID());
+        }
     }
 }

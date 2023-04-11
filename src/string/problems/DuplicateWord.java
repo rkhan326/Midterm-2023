@@ -10,6 +10,7 @@ public class DuplicateWord {
          * Also Find the average length of the words.
          */
 
+
         String st = "Java is a programming Language Java is also an Island of Indonesia. Java is widely used language";
 
         int count = 0;

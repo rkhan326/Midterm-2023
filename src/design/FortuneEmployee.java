@@ -14,7 +14,7 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
-		EmployeeInfo employee1= new EmployeeInfo("john",005,"manager");
+		EmployeeInfo employee1= new EmployeeInfo("Razia",0002,"manager");
 
 
 		employee1.setDateOfBirth("(03/26/1987)");

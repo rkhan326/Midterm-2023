@@ -1,88 +1,180 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.A programming language is a vocabulary and set of grammatical rules for instructing a computer or computing device to perform specific tasks. • The term programming language usually refers to high-level languages, such as BASIC, C, C++, COBOL, Java, FORTRAN, Ada, and Pascal. •
+A.a programming language is a intermediate language between human being  and the machine in order to execute what the user wants
+
 
 What jdk contains or composed of and define each components?
-A.
-
-
-
+A.jdk contain 2 main components
+1-JRE (java runtime environment) is a part of jdk that contains libraries
+2-jvm(java virtual machine) is used to turn the bytcode into a machine code
+3- javadoc is documentation of java in the libraries
 
 
 What is IDE?
-A.
+A. interface development environment is the interface where we run the block of code
 
 
 
 What are the IDEs available in the market to support java?
-A.
+A.eclipse , netbeans, intellij,
 
 
 
 Explain the entire java life cycle.
+A. 1 soruce code 2-compile 3 we get file java.class 4 compile  5 we get file java.java
 what is class?
+A.a class is a blueprint
 What is object?
+A. an object is an instance of a class
 What is the entry point of an application?
+A.the entry point of an application is the  main method
 Why main is static?
+A.in order to invoke it without creating an object
 Which class is the superclass of all classes?
+A.object class
 What is difference between path and classpath variables?
+A.a path is an environment variable used by operating system to locate the executable file but the classPath is an environment variables used by the application is order to locate the java.class file
 What is the difference between an Interface and Abstract class?
+A.abstract class contain at least one abstract method but the methods in the interface are all abstract (without implementation)
+interface use implements key word and abstract class use extends
+variables in interface are all final but in abstract class not
+all methods and variables are public in the interface but int abstract class they can be modified
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A. no we cannot. in order to use them we have to assign them to the classes that implements the interface or use the inherited class
 what is Access Specifier?
+A. access specifier is a key word used to determine the access to a method or variable (public protected private default)
 What is OOP ? Define each feature of java OOP.
+object oriented programming
+1- abstraction :used with interface and abstract class
+2- polymorphism: concept of overriding and overloading
+3-encapsulation: data hiding
+4- inheritance: class inherit from an other class
+
 What is Java Package and which package is imported by default?
+A.java package is set of classes and the one imported by default is java.lang
+
 What is API? Name list of API that you have used so far.
+A.application programming interface
+we used java Api
 Does java support multiple inheritance, explain why or why not?
+A.no java does not support multiple inheritance : a class cannot be extended from 2 two classes
+
 What is method overloading and when it happens?
+A.method overloading is a method with the same name same return type but different parameters
+its happening during compile time
+
 Explain exceptions in java and how to handle it.
+A. an exception is an error occur in the compile time or the run time
+
 What is static keyword in java? How it has been used in variables and methods ?
+A. a static key word mean that the variable or method belong to a class
+we can call the method or assign the variable without creating an instance of the class
+access modifier static return type name of variable or method...
 What is final and how it has been used variables and methods?
+A. final is key word that means a variable is final(cannot change its value)and for methods it means that we cannot override the method
+
 What is final, finally and finalize?
+final is key word used with method and variables
+finally is key word used with the block try catch
+finalize is word used with the garbage collection
+
 What is a constructor ?
+A. a constructor is a specific method that take the name of the class and has no return type
+
 Can we have multiple constructors in a class?
+A. yes we can (overloading concept)
+
 If we don't have a constructor declared, what is called during the object creation?
+A. the default constructor that came without parameters
+
 What is "this" keyword in java ?
+A. this refers to an instance of an object
+
 What is "super" keyword in java? How many possible way can you use?
+A. super refers to the super class
+we can use it to access the variables and methods in the super class by typing super.()
+
 What is JVM stand for ?
+java virtual machine
 Is JVM platform independent?
+A.no
 What version of java are you using?
+A.version 17
 What is JAR stand for ?
+A. java archive
 What is the difference between JDK and JVM?
+A.jdk is development kit to develop a java application
+jvm is execute the bytecode into machine code
+
 What is the difference between JVM and JRE?
+A.jre provide libraries and necessary components  to run the java code
+jvm is a part of jre
+
 What is compile time and run time?
+A.compile time is the time when we write the code
+run time is the time when we execute the java code
 What is heap?
+a heap is a dynamic memory
+
 How java manage it's memory?
+A.java manages its memory using heap memory or stack memory and the garbage collection
+
 What is the difference between String, StringBuffer and StringBuilder?
+A.String is immutable but stringBuffer and String Builder are mutable
+
 What is Singleton class?
+A. class that we cannot create an object from it
 What is Serialization and Deserialization?
+A.Serialization is a mechanism of converting the state of an object into a byte stream
+Deserialization is converting a byte stream to an object
 when to use transient variable in java?
+A.we don't want to save value of a particular variable in a file
 Difference between while and do..while loop?
+A. while check the condition and then it execute the code (it could be executed it could be not al all)
+do while execute at least once and then it check the conditions
 What is Enum?
+A.enumeration is used to set a constant variables like week od the day or months
 What is Iterator?
+A. an iterator is an object used to loop through collections
 Which one will take more memory, an int or Integer?
+A. an Integer
 Why is String Immutable in Java?
+A. security.
 What is constructor chaining in Java?
 The difference between Serial and Parallel Garbage Collector?
 What is JIT stands for?
+A.just in time
 Explain Java Heap space and Garbage collection?
+A.when the heap space is full .the garbage collection wil come to collect the unused objects to free the memory
 Can you guarantee the garbage collection process?
+A.no
 What is the difference between stack and heap in Java?
+A. stack memory we cannot delete a previous object until we delete the current object but in the heap memory the process of deleting is flexible
+
 What is reflection in java and why is it useful?
+
 what is multithreading in java?
+A. when we have multi execution
+
 What is the use of synchronization in Java?
+A.capability to control the access of multiple threads to any shared resource
+
 What is Framework?
+A. a collection of predefined classes and functions
 What are the testing Framework available in java?
+junit,testNG
+
 Difference between jUnit and testNG?
+A.JUnit does not support running parallel test simultaneously but testng you could run parallel test
 What are the dependencies for this project?
+A. sql dependency
+ mongodb dependency
+ junit dependency
+
 what is dependency injection in java?
+A Java class has a dependency on another class, if it uses an instance of this class. We call this a class dependency
 What is static binding and dynamic binding?
-
-
-
-
-
-
-
-
+A.Static binding happens when all information needed to call a function is available at the compile-time.
+Dynamic binding happens when the compiler cannot determine all information needed for a function call at compile-time.
 
