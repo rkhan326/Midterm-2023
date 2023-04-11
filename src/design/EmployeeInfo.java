@@ -112,17 +112,35 @@ public class EmployeeInfo implements Employee {
 	public int employeeId() {
 		return getEmployeeId();
 	}
+	@Override
+	public void assignDepartment() {
+		System.out.println("you will be assigned to a"+getDepartment()+" department");
+	}
 
 	@Override
 	public String employeeName() {
 		return getName();
 	}
 
+	@Override
+	public void benefitLayout() {
+		System.out.println("You are eligible for benefits, if you meet certain requirements.");
 
+	}
 
 	@Override
-	public void assignDepartment() {
-		System.out.println("you will be assigned to a"+getDepartment()+" department");
+	public void employeeStartDate() {
+
+	}
+
+	@Override
+	public void employeeEndDate() {
+
+	}
+
+	@Override
+	public void employeeTeamName() {
+
 	}
 
 	@Override
@@ -130,11 +148,7 @@ public class EmployeeInfo implements Employee {
 		return (int) getSalary();
 	}
 
-	@Override
-	public void benefitLayout() {
-		System.out.println("if you are a full time worked , you are eligible for all benefits");
 
-	}
 
 
 	private static class DateConversion {

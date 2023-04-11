@@ -30,6 +30,7 @@ public class LowestNumber {
 			e.printStackTrace();
 		}
 		List<String> lowestValue = new ArrayList<String>();
+
 		try {
 			connectToSqlDB.insertDataFromArrayToSqlTable(array, "tbl_lowestNumber", "column_lowestNumber");
 			lowestValue = connectToSqlDB.readDataBase("tbl_lowestNumber", "column_lowestNumber");

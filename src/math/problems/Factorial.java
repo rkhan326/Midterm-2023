@@ -8,7 +8,7 @@ public class Factorial {
          *
          */
         //Factorial Using Iteration
-        int givenNumber = 5;
+        long givenNumber = 5;
         long factorialOfANumber = 1;
 
         for (int i = 1; i <= givenNumber; i++) {
@@ -25,7 +25,7 @@ public class Factorial {
 
 
     //Factorial Using Recursion
-    private static long factorial(int givenNumber1) {
+    public static long factorial(int givenNumber1) {
         if (givenNumber1 > 0) {
             return givenNumber1 * factorial(givenNumber1-1);
         }else {
