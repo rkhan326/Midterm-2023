@@ -12,13 +12,13 @@ public class UseQueue {
 		 * 
 		 */
 		Queue<Integer> list= new PriorityQueue<Integer>();
-		for (int i = 0 ;i<11;i++){
+		for (int i = 0 ;i<15;i++){
 			list.add(i);
 		}
 
 		System.out.println(list);
 		System.out.println(list.peek());
-		list.add(11);
+		list.add(15);
 		System.out.println(list);
 		System.out.println("-------------");
 		list.remove(0);
