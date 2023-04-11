@@ -14,7 +14,16 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
-		
+		EmployeeInfo employee1= new EmployeeInfo("john",005,"manager");
+
+
+		employee1.setDateOfBirth("(03/26/1987)");
+		employee1.setSalary(20000);
+		employee1.setSsn("134-23-7654");
+		employee1.setDepartment("Math");
+		employee1.setPhoneNumber("347-529-9088");
+
+
 
 
 	}

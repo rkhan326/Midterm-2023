@@ -23,4 +23,10 @@ public interface Employee {
 	//employee benefit
 	public void benefitLayout();
 
+	public void employeeStartDate();
+
+	public void employeeEndDate();
+
+	public void employeeTeamName();
+
 }
